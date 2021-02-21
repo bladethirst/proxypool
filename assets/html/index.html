@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <title>碧海免费节点池</title>
+    <link rel="shortcut icon" href="https://bihai.ml/files/favicon.ico" type="images/x-icon">
+    <meta property="og:description" content="免费的ss、ssr、vmess、trojan节点">
+    <meta name="keywords" content="免费的ss、ssr、vmess、torjan节点">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/client/metron-icon.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sansui233/proxypool-fe/css/client/metron-icon.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sansui233/proxypool-fe/css/index.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar is-primary pl-2 pr-2" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a href="https://{{ .domain }}" class="navbar-item">
+                <h1 class="title is-4">碧海免费节点池</h1>
+            </a>
+            <a role="button" class="navbar-burger burger is-white" aria-label="menu" aria-expanded="false" data-target="clients">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="clients" class="navbar-menu">
+            <div class="navbar-start is-size-6">
+               <!-- <a href="https://{{ .domain }}" target="_blank" class="navbar-item"><span class="icon"><i class="metron-atom"></i></span>&nbsp 碧海免费节点池</a>				
+			    <!--<a href="https://zq.bihai.cf" target="_blank" class="navbar-item"><span class="icon"><i class="metron-atom"></i></span>&nbsp 美服PROXYPOL</a> -->							
+			    <a href="https://bianyuan.xyz/" target="_blank" class="navbar-item"><span class="icon"><i class="metron-atom"></i></span>&nbsp 边缘转换</a> 
+                <a href="https://sub.bihai.ml/" target="_blank" class="navbar-item"><span class="icon"><i class="metron-atom"></i></span>&nbsp 碧海转换</a>		
+
+            </div>
+        </div>
+    </nav>
+ 
+    <div class="container">
+        <div class="section pb-0">
+		     <h5 class="title is-4">碧海免费节点池使用sansui233大佬fork版。在此感谢sansui233及zu1k两位大佬的无私奉献❗❗</h5>
+            <p>⭐️ 碧海免费节点池：自动抓取tg频道、订阅地址、公开互联网上的ss、ssr、vmess、trojan节点信息，聚合去重检测后提供节点列表</p>			
+
+            <hr class="pt-0 pb-0 mb-0 mt-2">
+        </div>
+        <section class='section'>
+	
+            <h5 class="title is-3 mt-3">⭐️统计⭐️</h5>
+            <p>目前共有抓取源<b class="has-text-primary"> {{ .getters_count }} </b>个，
+                全部节点<b class="has-text-primary"> {{ .all_proxies_count }} </b>个，ss节点<b class="has-text-primary"> {{ .ss_proxies_count }} </b>个，ssr节点<b class="has-text-primary"> {{ .ssr_proxies_count }} </b>个，vmess节点<b class="has-text-primary"> {{ .vmess_proxies_count }} </b>个，trojan节点<b class="has-text-primary"> {{ .trojan_proxies_count }} </b>个</p>
+            <p>可用节点数量：<b class="has-text-primary">{{ .useful_proxies_count }}</b></p>
+            <p>是否开启测速：<b class="has-text-primary">{{ .is_speed_test }}</b></p>
+            <p>最后更新时间：<b class="has-text-primary">{{ .last_crawl_time }}</b></p>
+        </section>
+	</div>	
+	</div>	
+     <div class="container">
+        <div class="section pb-0">
+        <h1 class="title is-3"><i class="metron-atom"></i>&nbsp其他网友架的节点池</h1>
+        </div>	
+        <section class="section">
+
+            <div class="table-container">
+                <div class="table-container">
+                    <table class="table is-fullwidth">
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <a href="https://proxypoolss.tk/" target="_blank" class="navbar-item"><span class="icon"><i class="metron-atom"></i></span>&nbsp proxypoolss.tk</a>
+                                </th>
+                                <th>
+                                    <a href="https://proxypool.ga/" target="_blank" class="navbar-item"><span class="icon"><i class="metron-atom"></i></span>&nbsp proxypool.ga</a>
+                                
+                                </th>
+                                <th>
+                                    <a href="https://tro.zqwnan.tk/" target="_blank" class="navbar-item"><span class="icon"><i class="metron-atom"></i></span>&nbsp tro.zqwnan.tk</a>
+                                </th>
+                                <th>
+                                    <a href="https://proxypoolsstest.herokuapp.com/" target="_blank" class="navbar-item"><span class="icon"><i class="metron-atom"></i></span>&nbsp proxypoolsstest</a>
+                                </th>
+                                <th>
+                                    <a href="http://proxypool.turinglabs.net/" target="_blank" class="navbar-item"><span class="icon"><i class="metron-atom"></i></span>&nbsp turinglabs</a>
+                                </th>
+
+                            </tr>                            
+
+                        </tbody>
+                    </table>
+                </div>		
+            </article>
+        </section> 		
+    </div> 	
+     <div class="container">
+        <div class="section pb-0">
+            <h1 class="title is-3">常用客户端订阅</h1>
+        </div>
+
+        <section class="section">
+        <h5 class="title is-4"><i class="metron-clash"></i>&nbspClash（不含配置文件）</h5>
+            <div class="table-container">
+                <div class="table-container">
+                    <table class="table is-fullwidth">
+                        <tbody>
+                            <tr>
+                                <th>筛选节点示例</th>
+                                <td>https://{{ .domain }}/clash/proxies?c=CN,HK,TW&type=ss</td>
+
+                            </tr>                            
+                            <tr>
+                                <th>所有节点</th>
+                                <td>https://{{ .domain }}/clash/proxies</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td><td class="has-text-right"><a href="clash://install-config?url=https://{{ .domain }}/clash/proxies" class="button is-small is-link">一键导入</a></td>
+                            </tr>
+                            <tr>
+                                <th>中港台节点</th>
+                                <td>https://{{ .domain }}/clash/proxies?c=CN,HK,TW</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td><td class="has-text-right"><a href="clash://install-config?url=https://{{ .domain }}/clash/proxies?c=CN,HK,TW" class="button is-small is-link">一键导入</a></td>
+                            </tr>
+							                            <tr>
+                                <th>日韩新节点</th>
+                                <td>https://{{ .domain }}/clash/proxies?c=KR,JP,SG</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td><td class="has-text-right"><a href="clash://install-config?url=https://{{ .domain }}/clash/proxies?c=KR,JP,SG" class="button is-small is-link">一键导入</a></td>
+                            </tr>
+							                            <tr>
+                                <th>亚洲节点</th>
+                                <td>https://{{ .domain }}/clash/proxies?c=CN,HK,TW,KR,JP,SG</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td><td class="has-text-right"><a href="clash://install-config?url=https://{{ .domain }}/clash/proxies?c=CN,HK,TW,KR,JP,SG" class="button is-small is-link">一键导入</a></td>
+                            </tr>
+							                            <tr>
+                                <th>美国节点</th>
+                                <td>https://{{ .domain }}/clash/proxies?c=US</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td><td class="has-text-right"><a href="clash://install-config?url=https://proxies.bhqt.workers.dev/clash/proxies?c=US" class="button is-small is-link">一键导入</a></td>
+                            </tr>
+							
+                        </tbody>
+                    </table>
+                </div>		
+            </article>
+        </section> 		
+
+        <section class="section">
+        <h5 class="title is-4"><i class="metron-ssr1"></i>&nbspShadowSocks</h5>
+            <div class="table-container">
+                <div class="table-container">
+                    <table class="table is-fullwidth">
+                        <tbody>
+                            <tr>
+                                <th>筛选节点示例</th>
+                                <td>https://{{ .domain }}/sip002/sub?c=CN,HK,TW</td>
+                            </tr>                           
+                            <tr>
+							<!-- https://{{ .domain }}/sip002/sub-->
+                                <th>所有节点</th>	
+                                <td>https://{{ .domain }}/sip002/sub</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+                            <tr>
+							<!-- https://{{ .domain }}/sip002/sub?c=CN,HK,TW -->
+                                <th>中港台节点</th>
+                                <td>https://{{ .domain }}/sip002/sub?c=CN,HK,TW</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+						    <tr>
+							<!-- https://{{ .domain }}/sip002/sub?c=KR,JP,SG -->
+                                <th>日韩新节点</th>
+                                <td>https://{{ .domain }}/sip002/sub?c=KR,JP,SG</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+							<tr>
+							<!-- https://{{ .domain }}/sip002/sub?c=CN,HK,TW,KR,JP,SG -->							
+                                <th>亚洲节点</th>
+                                <td>https://{{ .domain }}/sip002/sub?c=CN,HK,TW,KR,JP,SG</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+						    <tr> 
+							<!-- https://{{ .domain }}/sip002/sub?c=US -->
+                                <th>美国节点</th>
+                                <td>https://{{ .domain }}/sip002/sub?c=US </td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+   
+        <section class="section">
+        <h5 class="title is-4"><i class="metron-ssr"></i>&nbspShadowSocksR</h5>
+            <div class="table-container">
+                <div class="table-container">
+                    <table class="table is-fullwidth">
+                        <tbody>
+                            <tr>
+                                <th>筛选节点示例</th>
+                                <td>https://{{ .domain }}/ssr/sub?c=CN,HK,TW</td>
+                            </tr>                          
+                            <tr>
+							<!-- https://proxies.bihai.ml/clash/proxies?type=ssr  -->
+                                <th>所有节点</th>
+                                <td>https://{{ .domain }}/ssr/sub</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+                            <tr>
+							<!-- https://proxies.bihai.ml/clash/proxies?type=ssr&c=CN,HK,TW -->	
+                                <th>中港台节点</th>
+                                <td>https://{{ .domain }}/ssr/sub?c=CN,HK,TW</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+							<tr>
+							<!-- https://proxies.bihai.ml/clash/proxies?type=ssr&c=KR,JP,SG -->	
+                                <th>日韩新节点</th>
+                                <td>https://{{ .domain }}/ssr/sub?c=KR,JP,SG</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+							<tr>
+							<!-- https://proxies.bihai.ml/clash/proxies?type=ssr&c=CN,HK,TW,KR,JP,SG -->	
+                                <th>亚洲节点</th>
+                                <td>https://{{ .domain }}/ssr/sub?c=CN,HK,TW,KR,JP,SG</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+							<tr>
+							<!-- https://proxies.bihai.ml/clash/proxies?type=ssr&c=US -->							
+                                <th>美国节点</th>
+                                <td>https://{{ .domain }}/ssr/sub?c=US</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>    
+
+        <section class="section">
+            <h5 class="title is-4"><i class="metron-v2rayng"></i>&nbspV2ray</h5> 
+            <div class="table-container">
+                <div class="table-container">
+                    <table class="table is-fullwidth">
+                        <tbody>
+                            <tr>
+                                <th>筛选节点示例</th>
+                                <td>https://{{ .domain }}/vmess/sub?c=CN,HK,TW</td>
+                            </tr> 						
+                            <tr>
+							<!-- https://proxies.bihai.ml/clash/proxies?type=vmess -->
+                                <th>所有节点</th>
+                                <td>https://{{ .domain }}/vmess/sub</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+                            <tr>
+							<!-- https://proxies.bihai.ml/clash/proxies?type=vmess&c=CN,HK,TW -->
+                                <th>中港台节点</th>
+                                <td>https://{{ .domain }}/vmess/sub?c=CN,HK,TW</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+							<tr>
+							<!-- https://proxies.bihai.ml/clash/proxies?type=vmess&c=KR,JP,SG -->
+                                <th>日韩新节点</th>
+                                <td>https://{{ .domain }}/vmess/sub?c=KR,JP,SG</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+							<tr>
+							<!-- https://proxies.bihai.ml/clash/proxies?type=vmess&c=CN,HK,TW,KR,JP,SG -->
+                                <th>亚洲节点</th>
+                                <td>https://{{ .domain }}/vmess/sub?c=CN,HK,TW,KR,JP,SG</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+							<tr>
+							<!-- https://proxies.bihai.ml/clash/proxies?type=vmess&c=US -->
+                                <th>美国节点</th>
+                                <td>https://{{ .domain }}/vmess/sub?c=US</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>						
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+		
+        <section class="section">
+            <h5 class="title is-4">&nbspTrojan</h5> 
+            <div class="table-container">
+                <div class="table-container">
+                    <table class="table is-fullwidth">
+                        <tbody>
+
+                            <tr>
+                                <th>筛选节点示例</th>
+                                <td>https://{{ .domain }}/trojan/sub?c=CN,HK,TW</td>
+                            </tr>                          						                          
+                            <tr>
+                                <th>所有节点</th>
+                                <td>https://{{ .domain }}/trojan/sub</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+							<tr>
+                                <th>亚洲节点</th>
+                                <td>https://{{ .domain }}/trojan/sub?c=CN,HK,TW,KR,JP,SG</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+							<tr>
+                                <th>美国节点</th>
+                                <td>https://{{ .domain }}/trojan/sub?c=US</td>
+                                <td class="has-text-right"><button class="button is-small is-primary" onclick="onCopy(this)">复制</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>		
+  
+        <section class="section ">
+            <h5 class="title is-4">Clash Provider筛选参数</h5>
+            <p>🌟 使用<a href="https://en.wikipedia.org/wiki/Query_string">URL Query</a>对Clash Provider进行筛选</p>
+            <div class="table-container mt-2">
+                <table class="table is-fullwidth">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <td>Query&nbspKey</td>
+                            <td>Query&nbspValue</td>
+                            <td>备注</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>类型</th>
+                            <td>type</td>
+                            <td>ss,ssr,vmess,trojan</td>
+                            <td>可同时选择多个类型</td>
+                        </tr>
+                        <tr>
+                            <th>国家</th>
+                            <td>c</td>
+                            <td>AT,CN,IN,HK,JP,NL,RU,SG,TW,US...</td>
+                            <td>可同时选择多个国家</td>
+                        </tr>
+                        <tr>
+                            <th>排除国家</th>
+                            <td>nc</td>
+                            <td>AT,CN,IN,HK,JP,NL,RU,SG,TW,US...</td>
+                            <td>可同时选择多个国家</td>
+                        </tr>
+                        <tr>
+                            <th>速度</th>
+                            <td>speed</td>
+                            <td>任何数字</td>
+                            <td>单个数字选择最低速度<br>两个数字选择速度区间</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>        
+
+    <footer class="footer has-text-centered">
+        <!-- 所有使用本代码提供服务的禁止删除、修改版权信息 -->
+        <!-- <p>欢迎关注tg频道：<a href="https://t.me/peekfun">@peekfun</a></p> -->
+        <p>抓取程序已开源：<a href="https://github.com/zu1k/proxypool">zu1k/proxypool</a></p>
+        <p>本程序为sansui233大佬fork版：<a href="https://github.com/sansui233/proxypool">sansui233/proxypool</a>&nbsp{{ .version }}</p>
+        <br>
+        <p><b>Theme</b>&nbspby&nbsp<a href="https://github.com/sansui233/" class="has-text-primary"><b>Sansui233</b></a> Powered&nbspby&nbsp<b>Bulma</b></p>
+    </footer>
+    <script src="static/index.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VK0B43EQ3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9VK0B43EQ3');
+    </script>
+</body>
+
+</html>
